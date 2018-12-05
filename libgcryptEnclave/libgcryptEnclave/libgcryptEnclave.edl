@@ -1,0 +1,15 @@
+enclave {
+    trusted {
+        /* define ECALLs here. */
+        public int FM(uint32_t input);
+        public void decrypt();
+	};
+
+    untrusted {
+        /* define OCALLs here. */
+		/* may have to define extract as OCALL here, to read data outside enclave? BUT Probably not. Not sure yet.*/
+		void enclsleep(int usecond);
+		void MYDEBUG(int out);
+		void TRACE(uint32_t type, uint64_t addr);
+    };
+};
