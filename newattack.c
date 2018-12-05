@@ -575,7 +575,7 @@ int main(int c, char **v) {
     /*using a small array, avoiding cache footprints? */
     /* Using smaller elements reduces the chance of using conflicting lines at the cost of a larger interference
      * when a conflict arrises.  */
-    int mulcolour = -1;
+/*    int mulcolour = -1;
  //     return 0;
  //   printf("priming..\n");
     while(1)
@@ -586,7 +586,7 @@ int main(int c, char **v) {
    		//probe(probeLists2);
  //  		prime(primeLists2);
  //  		prime(primeLists2);
-    }	
+    }*/	
     return 0;
 
 }
