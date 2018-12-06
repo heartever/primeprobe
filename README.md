@@ -9,3 +9,7 @@ We have performed the attack against libgcrypt (the attached source files.) Also
 Attention should be paid to the cache slice mapping which is hardcoded in function [getslicemapping(...)](https://github.com/heartever/primeprobe/blob/0178e80793ddb18f00e2c106a6a8e91d548e6dd4/newattack.c#L201) of newattack.c. Our testbed is equipped with an i7-6700k processor with hyperthreading enabled. It is likely to work for other processors with 4 physical cores when hyperthreading is turned on.
 
 If hyperthreading is turned off or not supported, you may try other configurations provided in the paper (e.g. the first pair of h1 and h0). I am not sure about the slice mapping for processors with 6 cores supporting SGX.
+
+```
+sudo ./newattack -a $physical_address
+```
